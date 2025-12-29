@@ -1,1 +1,55 @@
+/* Маскируем под системные стили темы */
 
+/* Таблицы как в премиум шаблонах */
+.entry-content table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    margin: 25px 0 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
+
+.entry-content table th {
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+    padding: 15px !important;
+    border-bottom: 2px solid #eee !important;
+}
+
+.entry-content table td {
+    padding: 12px 15px !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    vertical-align: middle !important;
+    background: #fff !important;
+}
+
+/* Красивая красная кнопка (как ты хотел) */
+.btn-red, .text__button {
+    background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%) !important;
+    color: #fff !important;
+    padding: 12px 25px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3) !important;
+}
+
+.btn-red:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(255, 75, 43, 0.4) !important;
+    color: #fff !important;
+}
+
+/* Эффект для всей страницы, чтобы "дорого" смотрелось */
+.entry-content p {
+    line-height: 1.7 !important;
+    color: #444 !important;
+}
