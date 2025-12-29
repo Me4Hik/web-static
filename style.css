@@ -1,81 +1,67 @@
-/* --- Глобальный контейнер контента --- */
+/* --- Стили для контента (обязательно обернуть в .entry-content) --- */
 .entry-content {
-    line-height: 1.7 !important;
-    color: #444 !important;
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
+    line-height: 1.8 !important;
+    color: #333;
 }
 
-/* --- ТАБЛИЦЫ В СТИЛЕ FORENSIC TERMINAL --- */
+/* ТАБЛИЦА В СТИЛЕ FORENSIC (ТЕМНАЯ) */
 .entry-content table {
     width: 100% !important;
     border-collapse: separate !important;
     border-spacing: 0 !important;
-    margin: 30px 0 !important;
-    background: #0f141c !important; /* Глубокий темный фон из файла */
-    border-radius: 18px !important;
+    margin: 35px 0 !important;
+    background: #111821 !important; /* Глубокий темный фон из вашего файла */
+    border-radius: 12px !important;
     overflow: hidden !important;
-    border: 1px solid rgba(0, 234, 255, 0.2) !important; /* Неоновая граница */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+    border: 1px solid rgba(0, 234, 255, 0.15) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3) !important;
 }
 
-/* Шапка таблицы */
 .entry-content table th {
-    background: linear-gradient(90deg, #0a121e, #0e1f2e) !important;
-    color: #d4f8ff !important; /* Светло-голубой текст */
-    font-weight: 700 !important;
+    background: #1a2430 !important;
+    color: #00eaff !important; /* Неоновый заголовок */
+    font-weight: 800 !important;
     text-transform: uppercase !important;
-    font-size: 13px !important;
-    letter-spacing: 1.5px !important;
-    padding: 18px 15px !important;
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+    padding: 20px 15px !important;
     border-bottom: 1px solid rgba(0, 234, 255, 0.3) !important;
-    text-shadow: 0 0 10px rgba(0, 210, 255, 0.6) !important;
 }
 
-/* Ячейки таблицы */
 .entry-content table td {
-    padding: 14px 15px !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-    background: rgba(255, 255, 255, 0.02) !important;
-    color: #e9faff !important;
+    padding: 15px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+    background: transparent !important;
+    color: #d1d5db !important;
     font-size: 14px !important;
-    transition: all 0.3s ease !important;
+    vertical-align: middle !important;
 }
 
-/* Эффект при наведении на строку */
-.entry-content table tr:hover td {
-    background: rgba(0, 210, 255, 0.08) !important;
-    color: #00eaff !important;
+/* Выделение чисел (как в вашем файле) */
+.entry-content table td strong {
+    color: #f1c40f !important; /* Золотой акцент */
+    font-family: monospace;
+    font-size: 15px;
 }
 
-.entry-content table tr:last-child td {
-    border-bottom: none !important;
-}
-
-/* --- КНОПКА RED GLOSSY --- */
+/* КНОПКА (Градиент из файла) */
 .btn-red, .text__button {
     background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%) !important;
-    color: #fff !important;
-    padding: 14px 30px !important;
+    color: #ffffff !important;
+    padding: 15px 30px !important;
     border-radius: 50px !important;
     text-decoration: none !important;
     font-weight: 800 !important;
     text-transform: uppercase !important;
-    font-size: 13px !important;
-    display: inline-block !important;
-    transition: all 0.3s ease !important;
-    border: none !important;
-    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4) !important;
     letter-spacing: 1px !important;
+    display: inline-block !important;
+    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3) !important;
+    transition: 0.3s !important;
+    border: none !important;
 }
 
 .btn-red:hover {
-    transform: translateY(-3px) scale(1.02) !important;
-    box-shadow: 0 8px 25px rgba(255, 75, 43, 0.6) !important;
-    color: #fff !important;
-}
-
-/* --- ДОПОЛНИТЕЛЬНЫЙ КЛАСС ДЛЯ ВЫДЕЛЕНИЯ (Числа/Метрики) --- */
-.metric-highlight {
-    color: #f1c40f !important; /* Золотой акцент для цифр из файла */
-    font-weight: 900 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(255, 75, 43, 0.5) !important;
+    filter: brightness(1.1);
 }
