@@ -1,67 +1,56 @@
-/* --- Стили для контента (обязательно обернуть в .entry-content) --- */
-.entry-content {
-    line-height: 1.8 !important;
-    color: #333;
-}
-
-/* ТАБЛИЦА В СТИЛЕ FORENSIC (ТЕМНАЯ) */
+/* --- ТАБЛИЦА В СТИЛЕ FORENSIC --- */
 .entry-content table {
     width: 100% !important;
     border-collapse: separate !important;
     border-spacing: 0 !important;
-    margin: 35px 0 !important;
-    background: #111821 !important; /* Глубокий темный фон из вашего файла */
+    margin: 30px 0 !important;
+    background: #0d121a !important; /* Глубокий темный фон */
     border-radius: 12px !important;
+    border: 1px solid #1c2a39 !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5) !important;
     overflow: hidden !important;
-    border: 1px solid rgba(0, 234, 255, 0.15) !important;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3) !important;
 }
 
 .entry-content table th {
-    background: #1a2430 !important;
+    background: #16212e !important;
     color: #00eaff !important; /* Неоновый заголовок */
     font-weight: 800 !important;
     text-transform: uppercase !important;
     font-size: 11px !important;
     letter-spacing: 2px !important;
     padding: 20px 15px !important;
-    border-bottom: 1px solid rgba(0, 234, 255, 0.3) !important;
+    border-bottom: 2px solid #00eaff !important;
 }
 
 .entry-content table td {
-    padding: 15px !important;
-    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+    padding: 15px 15px !important;
     background: transparent !important;
-    color: #d1d5db !important;
+    color: #ffffff !important; /* Белый текст на темном */
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
     font-size: 14px !important;
-    vertical-align: middle !important;
 }
 
-/* Выделение чисел (как в вашем файле) */
+/* Золотые числа как в оригинале */
 .entry-content table td strong {
-    color: #f1c40f !important; /* Золотой акцент */
-    font-family: monospace;
-    font-size: 15px;
+    color: #f1c40f !important;
+    font-size: 16px !important;
 }
 
-/* КНОПКА (Градиент из файла) */
+/* КРАСНАЯ КНОПКА ГРАДИЕНТ */
 .btn-red, .text__button {
     background: linear-gradient(135deg, #ff4b2b 0%, #ff416c 100%) !important;
-    color: #ffffff !important;
-    padding: 15px 30px !important;
+    color: #fff !important;
+    padding: 15px 35px !important;
     border-radius: 50px !important;
     text-decoration: none !important;
     font-weight: 800 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
     display: inline-block !important;
-    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3) !important;
-    transition: 0.3s !important;
+    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4) !important;
     border: none !important;
+    transition: 0.3s !important;
 }
 
 .btn-red:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 25px rgba(255, 75, 43, 0.5) !important;
-    filter: brightness(1.1);
+    box-shadow: 0 8px 25px rgba(255, 75, 43, 0.6) !important;
 }
